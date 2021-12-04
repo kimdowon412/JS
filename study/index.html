@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도제 시작</title>
+</head>
+<body>
+    <script>
+        let log = console.log;
+        
+        function 함수이름(a, b)
+        {
+            return a + b;
+        }
+        
+        let sum = 함수이름(10, 20);
+        log(sum);
+
+        //일정시간 간격마다 특정함수를 계속 실행
+        let num = 1;
+        let id = 0; //인터벌 아이디
+
+        function 인터벌()
+        {
+            log(`박인붕 ${".".repeat(num)}`);
+            num++;
+            if(num >= 10)
+            {
+                clearInterval(id);
+            }
+        }
+
+        id = setInterval(인터벌, 500);
+        
+        
+        
+
+    </script>
+</body>
+</html>
